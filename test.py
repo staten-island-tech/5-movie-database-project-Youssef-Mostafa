@@ -24,4 +24,26 @@ data = json.load(movies)
 
 #File One
 
-print(data)
+""" for i in range(len(data)):
+    print(data[i]['title']) """
+
+#File Two
+
+""" year_release = input("WRITE A YEAR TO FIND A MOVIE.")
+year_release = int(year_release)
+for i in range(len(data)):
+    if (data[i]['year']) > year_release:
+        print(data[i]['title']) """
+
+#File Three
+
+""" year_release = input("WRITE A YEAR TO FIND A MOVIE.")
+cutoff_year = input("WRITE ANOTHER YEAR THAT IS LARGER THAN THE FIRST.")
+year_release = int(year_release)
+cutoff_year = int(cutoff_year)
+print(f"THE MOVIES THAT RELEASED BETWEEN {year_release} AND {cutoff_year} ARE:")
+for i in range(len(data)):
+    if data[i]['year'] > year_release and data[i]['year'] < cutoff_year:
+        print(data[i]['title']) """
+
+#File Four
