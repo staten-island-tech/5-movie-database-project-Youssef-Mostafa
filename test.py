@@ -47,3 +47,17 @@ for i in range(len(data)):
         print(data[i]['title']) """
 
 #File Four
+
+""" year_release = input("WRITE A YEAR TO FIND A MOVIE.")
+
+year_release = int(year_release)
+print(f"THE MOVIES THAT RELEASED DURING {year_release} ARE:")
+for i in range(len(data)):
+    if data[i]['year'] == year_release:
+        print(data[i]['title']) """
+
+#File Five
+
+
+
+#File Six
