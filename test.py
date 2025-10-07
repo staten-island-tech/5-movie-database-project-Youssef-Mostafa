@@ -58,6 +58,15 @@ for i in range(len(data)):
 
 #File Five
 
-
+""" movie_results = 0
+movie_name = input("WHAT IS THE NAME OF THE MOVIE YOU WANT TO FIND?")
+print(f"HERE ARE THE RESULTS FOR {movie_name}:")
+for i in range(len(data)):
+    if (data[i]['title']) == movie_name:
+        print(data[i])
+        movie_results = movie_results + 1
+if movie_results == 0:
+    print("THERE ARE NO MOVIES WITH THAT NAME. SEARCH AGAIN.") """
 
 #File Six
+
