@@ -60,7 +60,7 @@ exactreleaseyear(2023) """
 
 #File Five
 
-def moviesearch(movie_name):
+""" def moviesearch(movie_name):
     movie_results = 0
     print(f"HERE ARE THE RESULTS FOR {movie_name}:")
     for i in range(len(data)):
@@ -69,7 +69,11 @@ def moviesearch(movie_name):
             movie_results = movie_results + 1
     if movie_results == 0:
         print("THERE ARE NO MOVIES WITH THAT NAME. SEARCH AGAIN.")
-moviesearch("6")
+moviesearch("M3GAN") """
 
 #File Six
 
+def genresearch(genre_names):
+    genrenames = []
+    genrenames.append(genre_names)
+    
