@@ -29,44 +29,47 @@ data = json.load(movies)
 
 #File Two
 
-""" year_release = input("WRITE A YEAR TO FIND A MOVIE.")
-year_release = int(year_release)
-for i in range(len(data)):
-    if (data[i]['year']) > year_release:
-        print(data[i]['title']) """
+""" def releaseyear(year_release):
+    year_release = input("WRITE A YEAR TO FIND A MOVIE.")
+    year_release = int(year_release)
+    for i in range(len(data)):
+        if (data[i]['year']) > year_release:
+            print(data[i]['title'])
+releaseyear(2021) """
 
 #File Three
 
-""" year_release = input("WRITE A YEAR TO FIND A MOVIE.")
-cutoff_year = input("WRITE ANOTHER YEAR THAT IS LARGER THAN THE FIRST.")
-year_release = int(year_release)
-cutoff_year = int(cutoff_year)
-print(f"THE MOVIES THAT RELEASED BETWEEN {year_release} AND {cutoff_year} ARE:")
-for i in range(len(data)):
-    if data[i]['year'] > year_release and data[i]['year'] < cutoff_year:
-        print(data[i]['title']) """
+""" def releaserange(year_release, cutoff_year):
+    year_release = int(year_release)
+    cutoff_year = int(cutoff_year)
+    print(f"THE MOVIES THAT RELEASED BETWEEN {year_release} AND {cutoff_year} ARE:")
+    for i in range(len(data)):
+        if data[i]['year'] > year_release and data[i]['year'] < cutoff_year:
+            print(data[i]['title'])
+releaserange(2020, 2023) """
 
 #File Four
 
-""" year_release = input("WRITE A YEAR TO FIND A MOVIE.")
-
-year_release = int(year_release)
-print(f"THE MOVIES THAT RELEASED DURING {year_release} ARE:")
-for i in range(len(data)):
-    if data[i]['year'] == year_release:
-        print(data[i]['title']) """
+""" def exactreleaseyear(year_release):
+    year_release = int(year_release)
+    print(f"THE MOVIES THAT RELEASED DURING {year_release} ARE:")
+    for i in range(len(data)):
+        if data[i]['year'] == year_release:
+            print(data[i]['title'])
+exactreleaseyear(2023) """
 
 #File Five
 
-""" movie_results = 0
-movie_name = input("WHAT IS THE NAME OF THE MOVIE YOU WANT TO FIND?")
-print(f"HERE ARE THE RESULTS FOR {movie_name}:")
-for i in range(len(data)):
-    if (data[i]['title']) == movie_name:
-        print(data[i])
-        movie_results = movie_results + 1
-if movie_results == 0:
-    print("THERE ARE NO MOVIES WITH THAT NAME. SEARCH AGAIN.") """
+def moviesearch(movie_name):
+    movie_results = 0
+    print(f"HERE ARE THE RESULTS FOR {movie_name}:")
+    for i in range(len(data)):
+        if (data[i]['title']) == movie_name:
+            print(data[i])
+            movie_results = movie_results + 1
+    if movie_results == 0:
+        print("THERE ARE NO MOVIES WITH THAT NAME. SEARCH AGAIN.")
+moviesearch("6")
 
 #File Six
 
