@@ -75,5 +75,13 @@ moviesearch("M3GAN") """
 
 def genresearch(genre_names):
     genrenames = []
+    movie_results = 0
     genrenames.append(genre_names)
-    
+    print(f"HERE ARE THE RESULTS FOR {genre_names}:")
+    for i in range(len(data)):
+        if (data[i]['genres']) == genrenames:
+            print(data[i])
+            movie_results = movie_results + 1
+    if movie_results == 0:
+        print("THERE ARE NO MOVIES WITH THAT GENRE/GENRES. SEARCH AGAIN.")
+genresearch("Horror")
