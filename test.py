@@ -78,9 +78,9 @@ def genresearch(genre_names):
     movie_results = 0
     print(f"HERE ARE THE RESULTS FOR {genre_names}:")
     for i in range(len(data)):
-        if (data[i]['genres']) == genre_names:
+        if (data[i]['genres']) in genre_names:
             print(data[i]['title'])
             movie_results = movie_results + 1
     if movie_results == 0:
         print("THERE ARE NO MOVIES WITH THAT GENRE/GENRES. SEARCH AGAIN.")
-genresearch("Horror, Supernatural")
+genresearch("Horror")
