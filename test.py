@@ -83,4 +83,4 @@ def genresearch(genre_names):
             movie_results = movie_results + 1
     if movie_results == 0:
         print("THERE ARE NO MOVIES WITH THAT GENRE/GENRES. SEARCH AGAIN.")
-genresearch("Horror")
+genresearch("Horror, Supernatural")
